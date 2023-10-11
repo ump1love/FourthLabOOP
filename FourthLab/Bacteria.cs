@@ -1,0 +1,4 @@
+﻿class Bacteria : Microorganism
+{
+
+}

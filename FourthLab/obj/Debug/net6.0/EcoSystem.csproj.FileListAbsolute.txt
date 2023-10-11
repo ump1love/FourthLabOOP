@@ -1,0 +1,14 @@
+D:\codes\codes for uni\FourthLab\FourthLab\bin\Debug\net6.0\EcoSystem.exe
+D:\codes\codes for uni\FourthLab\FourthLab\bin\Debug\net6.0\EcoSystem.deps.json
+D:\codes\codes for uni\FourthLab\FourthLab\bin\Debug\net6.0\EcoSystem.runtimeconfig.json
+D:\codes\codes for uni\FourthLab\FourthLab\bin\Debug\net6.0\EcoSystem.dll
+D:\codes\codes for uni\FourthLab\FourthLab\bin\Debug\net6.0\EcoSystem.pdb
+D:\codes\codes for uni\FourthLab\FourthLab\obj\Debug\net6.0\EcoSystem.GeneratedMSBuildEditorConfig.editorconfig
+D:\codes\codes for uni\FourthLab\FourthLab\obj\Debug\net6.0\EcoSystem.AssemblyInfoInputs.cache
+D:\codes\codes for uni\FourthLab\FourthLab\obj\Debug\net6.0\EcoSystem.AssemblyInfo.cs
+D:\codes\codes for uni\FourthLab\FourthLab\obj\Debug\net6.0\EcoSystem.csproj.CoreCompileInputs.cache
+D:\codes\codes for uni\FourthLab\FourthLab\obj\Debug\net6.0\EcoSystem.dll
+D:\codes\codes for uni\FourthLab\FourthLab\obj\Debug\net6.0\refint\EcoSystem.dll
+D:\codes\codes for uni\FourthLab\FourthLab\obj\Debug\net6.0\EcoSystem.pdb
+D:\codes\codes for uni\FourthLab\FourthLab\obj\Debug\net6.0\EcoSystem.genruntimeconfig.cache
+D:\codes\codes for uni\FourthLab\FourthLab\obj\Debug\net6.0\ref\EcoSystem.dll
