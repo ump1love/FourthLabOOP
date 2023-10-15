@@ -1,4 +1,4 @@
 ﻿interface IPredator
 {
-    void Hunt(LiveBeing prey);
+    void Hunt(LiveBeing target);
 }

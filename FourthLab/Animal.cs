@@ -1,23 +1,35 @@
-﻿class Animal : LiveBeing
+﻿class Animal : LiveBeing, IReproducible, IPredator
 {
-    private int reproductionLevel;    // Affects their reproduction level
-    private int reproductionAmount;   // Affects the number of new animals
-    private int speed;                // Affects success in herbivore catching
+    private string species;
+    private string sex;
 
-    public void SetReproductionLevel(int value) { reproductionLevel = value; }
-    public int GetReproductionLevel() { return reproductionLevel; }
-    public void SetReproductionAmount(int value) { reproductionAmount = value; }
-    public int GetReproductionAmount() { return reproductionAmount; }
-    public void SetSpeed(int value) { speed = value; }
-    public int GetSpeed() { return speed; }
-
-    public Animal(Sex sex)
+    public string Species
     {
-        reproductionLevel = 0;
-        reproductionAmount = 0;
-        speed = 0;
-        SetSex(sex);
-        SetSize(Size.small);
-        SetAge(Age.child);
+        get { return species; }
+        set { species = value; }
+    }
+    public string Sex
+    {
+        get { return sex; }
+        set { sex = value; }
+    }
+
+    public Animal(string species, int energy, int age, int size, string sex) : base(energy, age, size)
+    {
+        Species = species;
+        Sex = sex;
+    }
+
+    public void Reproduce()
+    {
+        if (Age == 3 && Energy >= 40 && (Sex == "male" || Sex == "female"))
+        {
+            Console.WriteLine($"{Species} is reproducing.");
+        }
+    }
+
+    public void Hunt(LiveBeing target)
+    {
+        Console.WriteLine($"{Species} is hunting.");
     }
 }

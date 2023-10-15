@@ -1,23 +1,23 @@
-﻿class Plant : LiveBeing
+﻿class Plant : LiveBeing, IReproducible
 {
-    private int photosynthesisLevel;  // Affects size change
-    private int fertility;            // Affects reproduction level
-    private int toxicity;             // Affects their defense
+    private string type;
 
-    public void SetPhotosynthesisLevel(int value) { photosynthesisLevel = value; }
-    public int GetPhotosynthesisLevel() { return photosynthesisLevel; }
-    public void SetFertility(int value) { fertility = value; }
-    public int GetFertility() { return fertility; }
-    public void SetToxicity(int value) { toxicity = value; }
-    public int GetToxicity() { return toxicity; }
-
-    public Plant()
+    public string Type
     {
-        photosynthesisLevel = 0;
-        fertility = 0;
-        toxicity = 0;
-        SetSex(Sex.unknown);
-        SetSize(Size.small);
-        SetAge(Age.child);
+        get { return type; }
+        set { type = value; }
+    }
+
+    public Plant(string type, int energy, int age, int size) : base(energy, age, size)
+    {
+        Type = type;
+    }
+
+    public void Reproduce()
+    {
+        if (Age == 2 && Energy >= 25)
+        {
+            Console.WriteLine($"{Type} is reproducing.");
+        }
     }
 }

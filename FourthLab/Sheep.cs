@@ -1,4 +1,0 @@
-﻿class Sheep : Animal
-{
-
-}

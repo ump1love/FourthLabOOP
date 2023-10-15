@@ -1,20 +1,23 @@
-﻿class Microorganism : LiveBeing
+﻿class Microorganism : LiveBeing, IReproducible
 {
-    private int reproductiveRate;  // Affects their reproduction level
-    private int infectivity;       // Affects their defense
+    private string strain;
 
-    public void SetReproductiveRate(int value) { reproductiveRate = value; }
-    public int GetReproductiveRate() { return reproductiveRate; }
-    public void SetInfectivity(int value) { infectivity = value; }
-    public int GetInfectivity() { return infectivity; }
-
-    public Microorganism()
+    public string Strain
     {
-        reproductiveRate = 0;
-        infectivity = 0;
-        SetEnergy(40);
-        SetSex(Sex.unknown);
-        SetSize(Size.micro);
-        SetAge(Age.adult);
+        get { return strain; }
+        set { strain = value; }
+    }
+
+    public Microorganism(string strain, int energy, int age, int size) : base(energy, age, size)
+    {
+        Strain = strain;
+    }
+
+    public void Reproduce()
+    {
+        if (Age == 1 && Energy >= 10)
+        {
+            Console.WriteLine($"{Strain} is reproducing.");
+        }
     }
 }
