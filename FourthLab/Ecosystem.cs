@@ -16,10 +16,7 @@
     {
         foreach (var organism in organisms)
         {
-            if (organism is IReproducible)
-            {
-                ((IReproducible)organism).Reproduce();
-            }
+            if (organism is IReproducible) { ((IReproducible)organism).Reproduce(); }
 
             if (organism is IPredator)
             {

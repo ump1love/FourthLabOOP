@@ -15,9 +15,6 @@
 
     public void Reproduce()
     {
-        if (Age == 1 && Energy >= 10)
-        {
-            Console.WriteLine($"{Strain} is reproducing.");
-        }
+        if (Age == 1 && Energy >= 10){ Console.WriteLine($"{Strain} is reproducing."); }
     }
 }

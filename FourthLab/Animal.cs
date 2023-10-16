@@ -22,14 +22,9 @@
 
     public void Reproduce()
     {
-        if (Age == 3 && Energy >= 40 && (Sex == "male" || Sex == "female"))
-        {
-            Console.WriteLine($"{Species} is reproducing.");
-        }
+        if (Age == 3 && Energy >= 40 && (Sex == "male" || Sex == "female")){ Console.WriteLine($"{Species} is reproducing."); }
     }
 
     public void Hunt(LiveBeing target)
-    {
-        Console.WriteLine($"{Species} is hunting.");
-    }
+    { Console.WriteLine($"{Species} is hunting."); }
 }

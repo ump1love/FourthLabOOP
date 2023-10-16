@@ -9,15 +9,10 @@
     }
 
     public Plant(string type, int energy, int age, int size) : base(energy, age, size)
-    {
-        Type = type;
-    }
+    { Type = type; }
 
     public void Reproduce()
     {
-        if (Age == 2 && Energy >= 25)
-        {
-            Console.WriteLine($"{Type} is reproducing.");
-        }
+        if (Age == 2 && Energy >= 25){ Console.WriteLine($"{Type} is reproducing."); }
     }
 }
